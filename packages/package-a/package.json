@@ -1,0 +1,15 @@
+{
+  "name": "package-a",
+  "scripts": {
+    "start": "webpack-dev-server --no-inline --config ./webpack.config.js --env.port=8081",
+    "build": "webpack --config ./webpack.config.js"
+  },
+  "dependencies": {
+    "package-b": "workspace:*"
+  },
+  "devDependencies": {
+    "webpack": "4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
